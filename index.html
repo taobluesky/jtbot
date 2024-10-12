@@ -93,10 +93,9 @@
 			//var str = 'randstr ="' + res.randstr + '"\nticket = "' + res.ticket + '"';
 			var str = '登录 '+ res.randstr + res.ticket;
             var w = getQueryStringValue('w');
-			if ( w === 'fh') {
-				str += ' 凤凰';
-			} else if (w === 'jt') {
-				str += ' 景泰';
+			if ( w !== '') {
+				str += ' ';
+				str += w;
 			}
 			var ipt = document.createElement('textarea');
 			ipt.value = str;
