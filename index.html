@@ -93,7 +93,7 @@
 			//var str = 'randstr ="' + res.randstr + '"\nticket = "' + res.ticket + '"';
 			var str = '登录 '+ res.randstr + res.ticket;
             var w = getQueryStringValue('w');
-			if ( w !== '') {
+			if (w != null && w !== '') {
 				str += ' ';
 				str += w;
 			}
